@@ -27,9 +27,7 @@ int main(int argc, char *argv[])
   sampler(sample,mu,sigma,N);*/
 
   FILE *gauss;
-  char name[15];
-  sprintf(name,"sample%d.dat",rank);
-  gauss=fopen(name,"w");
+  gauss=fopen("sample.dat","w");
   int i;
   float val;
   for (i = 0; i < N; ++i)
