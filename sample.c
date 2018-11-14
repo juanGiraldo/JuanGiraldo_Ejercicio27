@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
   gauss=fopen("sample.dat","w");
   int i;
   float val;
-  for (i = 0; i < N/size; ++i)
+  for (i = 0; i < N; ++i)
   {
     val=randn(mu,sigma);
     fprintf(gauss, "%lf\n",val);  /*,sample[i]);*/
